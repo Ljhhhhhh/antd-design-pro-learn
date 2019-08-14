@@ -225,6 +225,7 @@ const CreateProduct = (props: CreateProductProps) => {
             <Row type="flex" align="top">
               <Col>产品图片：</Col>
               <Col>
+              {/* // uploadList */}
                 <Upload
                   fileList={uploadList}
                   listType="picture-card"

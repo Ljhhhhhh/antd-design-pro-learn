@@ -49,14 +49,14 @@ export default [
             name: 'createProduct',
             path: '/product/create',
             component: './Product/product/create',
-            hideInMenu: true
+            hideInMenu: true,
           },
           {
             name: 'category',
             path: '/product/category',
             component: './Product/category',
           },
-        ]
+        ],
       },
       {
         name: 'user',
