@@ -5,7 +5,7 @@ import SelectLang from "../SelectLang";
 import styles from "./index.less";
 
 
-const GlobalHeaderRight: React.SFC = props => {
+const GlobalHeaderRight: React.SFC = () => {
   let className = styles.right;
   return (
     <div className={className}>

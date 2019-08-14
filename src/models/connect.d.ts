@@ -2,11 +2,10 @@ import { AnyAction } from "redux";
 import { EffectsCommandMap } from "dva";
 import { MenuDataItem } from "@ant-design/pro-layout";
 import { RouterTypes } from "umi";
-import { GlobalModelState } from "./global";
 import { DefaultSettings as SettingModelState } from "../../config/defaultSettings";
 import { UserModelState } from "./account";
 
-export { GlobalModelState, SettingModelState, UserModelState };
+export { SettingModelState, UserModelState };
 
 export interface Loading {
   global: boolean;
@@ -20,7 +19,6 @@ export interface Loading {
 }
 
 export interface ConnectState {
-  global: GlobalModelState;
   loading: Loading;
   settings: SettingModelState;
   account: UserModelState;

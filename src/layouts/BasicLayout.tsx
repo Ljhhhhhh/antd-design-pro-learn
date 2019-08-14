@@ -129,7 +129,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
       footerRender={footerRender}
       menuDataRender={menuDataRender}
       formatMessage={formatMessage}
-      rightContentRender={rightProps => <RightContent {...rightProps} />}
+      rightContentRender={() => <RightContent />}
       {...props}
       {...settings}
     >
@@ -138,8 +138,7 @@ const BasicLayout: React.FC<BasicLayoutProps> = props => {
   );
 };
 
-export default connect(({ global, settings, account }: ConnectState) => ({
-  collapsed: global.collapsed,
+export default connect(({ settings, account }: ConnectState) => ({
   settings,
   account
 }))(BasicLayout);
