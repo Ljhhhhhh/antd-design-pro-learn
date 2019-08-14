@@ -138,7 +138,7 @@ const List = (props: TableListProps) => {
 
   const CategoryPathRender = useMemo(() => {
     if (!categoryPath.length) return;
-    return categoryPath.map((category, index) => {
+    return categoryPath.map((category: any, index: number) => {
       if (index === categoryPath.length - 1) {
         return (
           <React.Fragment key={category.id}>
